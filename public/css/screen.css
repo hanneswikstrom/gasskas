@@ -174,13 +174,37 @@ h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   font-weight: bold; }
 
-/* line 5, ../../sources/scss/screen.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-w3nxpn");
+  src: url("../fonts/icomoon.eot?#iefix-w3nxpn") format("embedded-opentype"), url("../fonts/icomoon.woff?-w3nxpn") format("woff"), url("../fonts/icomoon.ttf?-w3nxpn") format("truetype"), url("../fonts/icomoon.svg?-w3nxpn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, ../../sources/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 26, ../../sources/scss/_icons.scss */
+.icon-gasskas-logo:before {
+  content: "\e600"; }
+
+/* line 6, ../../sources/scss/screen.scss */
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto; }
 
-/* line 13, ../../sources/scss/screen.scss */
+/* line 14, ../../sources/scss/screen.scss */
 .hero-container {
   position: relative;
   width: 100%;
@@ -188,37 +212,48 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center; }
 
-/* line 21, ../../sources/scss/screen.scss */
+/*.hero-logo {
+	background-image: url('../images/logo-hero.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat:no-repeat;
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	@include transform (translateX(-50%));
+}*/
+/* line 35, ../../sources/scss/screen.scss */
 .hero-logo {
-  background-image: url("../images/logo-hero.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 240px;
-  height: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: white;
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 30%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  font-size: 14em; }
 
-/* line 34, ../../sources/scss/screen.scss */
+/* line 47, ../../sources/scss/screen.scss */
 p {
   font-size: 1.15em;
   line-height: 1.7em;
   font-weight: normal;
   color: #2d302f; }
 
-/* line 41, ../../sources/scss/screen.scss */
+/* line 54, ../../sources/scss/screen.scss */
 .content-container {
   position: relative;
   height: 1500px;
   width: 100%;
   background-color: white; }
-  /* line 47, ../../sources/scss/screen.scss */
+  /* line 60, ../../sources/scss/screen.scss */
   .content-container .about {
     background-image: url("../images/logo-house.png");
     background-size: 200px auto;
@@ -230,11 +265,11 @@ p {
     padding-right: 120px;
     max-width: 850px;
     margin: auto; }
-  /* line 60, ../../sources/scss/screen.scss */
+  /* line 73, ../../sources/scss/screen.scss */
   .content-container .grid-section {
     width: 870px;
     margin: 0 auto; }
-    /* line 64, ../../sources/scss/screen.scss */
+    /* line 77, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-left {
       width: 50%;
       float: left;
@@ -243,7 +278,7 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 72, ../../sources/scss/screen.scss */
+    /* line 85, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-right {
       width: 50%;
       float: right;
@@ -252,11 +287,11 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 80, ../../sources/scss/screen.scss */
+    /* line 93, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-quote {
       width: 100%;
       padding: 4em; }
-      /* line 83, ../../sources/scss/screen.scss */
+      /* line 96, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-quote h3 {
         color: #2b8879;
         text-align: center;
@@ -264,65 +299,65 @@ p {
         font-style: italic;
         font-size: 1.8em;
         font-weight: 200; }
-    /* line 93, ../../sources/scss/screen.scss */
+    /* line 106, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-info {
       width: 100%;
       padding: 3.1em;
       float: left; }
-    /* line 99, ../../sources/scss/screen.scss */
+    /* line 112, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-photo-container {
       position: relative; }
-      /* line 102, ../../sources/scss/screen.scss */
+      /* line 115, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-photo-container .photo-wrapper {
         overflow: hidden;
         position: relative;
         padding: 4px; }
-        /* line 106, ../../sources/scss/screen.scss */
+        /* line 119, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo {
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover; }
-        /* line 110, ../../sources/scss/screen.scss */
+        /* line 123, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
           width: 100%;
           padding-bottom: 50%;
           background-image: url(https://ununsplash.imgix.net/reserve/J3URHssSQyqifuJVcgKu_Wald.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050); }
-        /* line 115, ../../sources/scss/screen.scss */
+        /* line 128, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
           float: right;
           width: 65%;
           padding-bottom: 30%;
           background-image: url(https://ununsplash.imgix.net/uploads/1412825195419af52b492/8bc72ed7?fit=crop&fm=jpg&h=700&q=75&w=1050); }
-        /* line 121, ../../sources/scss/screen.scss */
+        /* line 134, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
           float: right;
           width: 65%;
           padding-bottom: 50%;
           background-image: url(https://ununsplash.imgix.net/photo-1415226620463-aedee27159c5?fit=crop&fm=jpg&h=800&q=75&w=1050); }
-        /* line 127, ../../sources/scss/screen.scss */
+        /* line 140, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-portrait {
           float: left;
           width: 50%;
           padding-bottom: 85%;
           background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg); }
-        /* line 133, ../../sources/scss/screen.scss */
+        /* line 146, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .photo-box-container {
           width: 50%; }
-        /* line 136, ../../sources/scss/screen.scss */
+        /* line 149, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-1 {
           padding: 4px;
           width: 100%;
           padding-bottom: 100%;
           background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg); }
-        /* line 142, ../../sources/scss/screen.scss */
+        /* line 155, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-2 {
           padding: 4px;
           width: 100%;
           padding-bottom: 90%;
           background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg); }
 
-/* line 153, ../../sources/scss/screen.scss */
+/* line 166, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -334,11 +369,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 164, ../../sources/scss/screen.scss */
+  /* line 177, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 168, ../../sources/scss/screen.scss */
+    /* line 181, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -350,17 +385,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 176, ../../sources/scss/screen.scss */
+      /* line 189, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 179, ../../sources/scss/screen.scss */
+        /* line 192, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 186, ../../sources/scss/screen.scss */
+      /* line 199, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -376,7 +411,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 202, ../../sources/scss/screen.scss */
+/* line 215, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -384,13 +419,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 211, ../../sources/scss/screen.scss */
+  /* line 224, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 216, ../../sources/scss/screen.scss */
+  /* line 229, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 221, ../../sources/scss/screen.scss */
+  /* line 234, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;

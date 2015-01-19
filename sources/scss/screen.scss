@@ -1,6 +1,7 @@
 @import "compass";
 @import "grid";
 @import "base";
+@import "icons";
 
 .container {
    width: 100%;
@@ -18,7 +19,7 @@
 	background-position: center;
 }
 
-.hero-logo {
+/*.hero-logo {
 	background-image: url('../images/logo-hero.png');
 	background-size: contain;
 	background-position: center;
@@ -29,6 +30,18 @@
 	left: 50%;
 	top: 0;
 	@include transform (translateX(-50%));
+}*/
+
+.hero-logo {
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	@include transform (translateX(-50%));
+	font-size: 14em;
 }
 
 p {
