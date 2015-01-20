@@ -92,14 +92,14 @@ p {
 		}
 		.grid-quote {
 			width: 100%;
-			padding: 4em;
+			padding: 5.3em 4em 5.3em 4em;
 			h3 {
 				color: rgba(43,136,121,1);
 				text-align: center;
   				font-family: "adobe-garamond-pro",sans-serif;
   				//font-family:Garamond, Georgia, serif;
   				font-style:italic;
-  				font-size:1.8em;
+  				font-size:2.0em;
   				font-weight: 200;
   			}
 		}
@@ -123,25 +123,29 @@ p {
 				.grid-photo-landscape-1 {
 					width: 100%;
 					padding-bottom: 50%;
-					background-image: url(https://ununsplash.imgix.net/reserve/J3URHssSQyqifuJVcgKu_Wald.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050);
+					//background-image: url(https://ununsplash.imgix.net/reserve/J3URHssSQyqifuJVcgKu_Wald.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050);
+					background-image: url('../images/grid-lemmel.jpg');
 				}
 				.grid-photo-landscape-2 {
 					float: right;
 					width: 65%;
 					padding-bottom: 30%;
-					background-image: url(https://ununsplash.imgix.net/uploads/1412825195419af52b492/8bc72ed7?fit=crop&fm=jpg&h=700&q=75&w=1050);
+					//background-image: url(https://ununsplash.imgix.net/uploads/1412825195419af52b492/8bc72ed7?fit=crop&fm=jpg&h=700&q=75&w=1050);
+					background-image: url('../images/grid-gasskas.jpg');
 				}
 				.grid-photo-landscape-3 {
 					float: right;
 					width: 65%;
 					padding-bottom: 50%;
-					background-image: url(https://ununsplash.imgix.net/photo-1415226620463-aedee27159c5?fit=crop&fm=jpg&h=800&q=75&w=1050);
+					//background-image: url(https://ununsplash.imgix.net/photo-1415226620463-aedee27159c5?fit=crop&fm=jpg&h=800&q=75&w=1050);
+					background-image: url('../images/grid-concert.jpg');
 				}
 				.grid-photo-portrait {
 					float: left;
 					width: 50%;
-					padding-bottom: 85%;
-					background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					padding-bottom: 95%;
+					//background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					background-image: url('../images/grid-door.jpg');
 				}
 				.photo-box-container {
 					width: 50%;
@@ -150,13 +154,15 @@ p {
 					padding: 4px;
 					width: 100%;
 					padding-bottom: 100%;
-					background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					//background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					background-image: url('../images/grid-jannok.jpg');
 				}
 				.grid-photo-box-2 {
 					padding: 4px;
 					width: 100%;
 					padding-bottom: 90%;
-					background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					//background-image: url(http://41.media.tumblr.com/fd71490d7db24b9b92450d0443b5ad47/tumblr_nfty4o99k61ta0hnbo1_1280.jpg);
+					background-image: url('../images/grid-fire.jpg');
 				}
 			}
 		}
