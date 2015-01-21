@@ -452,8 +452,18 @@ p {
       .content-container .opening-times-container .fb p {
         font-size: 1.3em;
         font-weight: 200; }
+  /* line 268, ../../sources/scss/screen.scss */
+  .content-container .our-menu-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 60px; }
 
-/* line 269, ../../sources/scss/screen.scss */
+/* line 281, ../../sources/scss/screen.scss */
 .bordered-button {
   display: inline-block;
   border: 2px solid #7a91c3;
@@ -467,12 +477,12 @@ p {
   transition: all 0.15s;
   color: #4964a2;
   margin-top: 1em; }
-  /* line 280, ../../sources/scss/screen.scss */
+  /* line 292, ../../sources/scss/screen.scss */
   .bordered-button:hover {
     border: 2px solid #565656;
     color: black; }
 
-/* line 286, ../../sources/scss/screen.scss */
+/* line 298, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -484,11 +494,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 297, ../../sources/scss/screen.scss */
+  /* line 309, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 301, ../../sources/scss/screen.scss */
+    /* line 313, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -500,17 +510,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 309, ../../sources/scss/screen.scss */
+      /* line 321, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 312, ../../sources/scss/screen.scss */
+        /* line 324, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 319, ../../sources/scss/screen.scss */
+      /* line 331, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -526,7 +536,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 335, ../../sources/scss/screen.scss */
+/* line 347, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -534,13 +544,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 343, ../../sources/scss/screen.scss */
+  /* line 355, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 348, ../../sources/scss/screen.scss */
+  /* line 360, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 353, ../../sources/scss/screen.scss */
+  /* line 365, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;

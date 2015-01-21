@@ -264,6 +264,18 @@ p {
 			}
 		}
 	}
+
+	.our-menu-container {
+		width: 100%;
+		//height: auto;
+		height: 600px;
+		position: relative;
+		display: inline-block;
+		background-size: cover;
+		background-position: center;
+		text-align:center;
+		padding-top: 60px;
+	}
 }
 
 .bordered-button {
