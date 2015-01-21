@@ -171,7 +171,7 @@ p, ul, ol, li {
 
 /* line 63, ../../sources/scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: Verlag, Helvetica Neue, Helvetica, sans-serif;
   font-weight: bold; }
 
 @font-face {
@@ -260,16 +260,15 @@ p {
     padding: 25px; }
     /* line 65, ../../sources/scss/screen.scss */
     .content-container .section-title h1 {
-      font-family: Verlag, Helvetica Neue, Helvetica, sans-serif;
       font-weight: normal;
       font-size: 1.5em;
       letter-spacing: 0.3em; }
-      /* line 71, ../../sources/scss/screen.scss */
+      /* line 70, ../../sources/scss/screen.scss */
       .content-container .section-title h1:after {
         content: "";
         position: absolute;
         height: 2px;
-        width: 80px;
+        width: 60px;
         left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -278,7 +277,7 @@ p {
         transform: translateX(-50%);
         bottom: 0px;
         background-color: #c8c8c8; }
-  /* line 84, ../../sources/scss/screen.scss */
+  /* line 83, ../../sources/scss/screen.scss */
   .content-container .about {
     background-image: url("../images/logo-house.png");
     background-size: 200px auto;
@@ -290,11 +289,11 @@ p {
     padding-right: 120px;
     max-width: 850px;
     margin: auto; }
-  /* line 97, ../../sources/scss/screen.scss */
+  /* line 96, ../../sources/scss/screen.scss */
   .content-container .grid-section {
     width: 870px;
     margin: 0 auto; }
-    /* line 101, ../../sources/scss/screen.scss */
+    /* line 100, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-left {
       width: 50%;
       float: left;
@@ -303,7 +302,7 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 108, ../../sources/scss/screen.scss */
+    /* line 107, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-right {
       width: 50%;
       float: right;
@@ -312,11 +311,11 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 115, ../../sources/scss/screen.scss */
+    /* line 114, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-quote {
       width: 100%;
       padding: 5.3em 4em 5.3em 4em; }
-      /* line 118, ../../sources/scss/screen.scss */
+      /* line 117, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-quote h3 {
         color: #248879;
         text-align: center;
@@ -324,77 +323,156 @@ p {
         font-style: italic;
         font-size: 2.0em;
         font-weight: 200; }
-    /* line 128, ../../sources/scss/screen.scss */
+    /* line 127, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-info {
       width: 100%;
       padding: 3.1em;
       float: left; }
-    /* line 135, ../../sources/scss/screen.scss */
+    /* line 134, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-photo-container {
       position: relative; }
-      /* line 138, ../../sources/scss/screen.scss */
+      /* line 137, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-photo-container .photo-wrapper {
         overflow: hidden;
         position: relative;
         padding: 4px; }
-        /* line 142, ../../sources/scss/screen.scss */
+        /* line 141, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo {
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover; }
-        /* line 146, ../../sources/scss/screen.scss */
+        /* line 145, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
           width: 100%;
           padding-bottom: 50%;
           background-image: url("../images/grid-lemmel.jpg"); }
-        /* line 152, ../../sources/scss/screen.scss */
+        /* line 151, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
           float: right;
           width: 65%;
           padding-bottom: 30%;
           background-image: url("../images/grid-gasskas.jpg"); }
-        /* line 159, ../../sources/scss/screen.scss */
+        /* line 158, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
           float: right;
           width: 65%;
           padding-bottom: 50%;
           background-image: url("../images/grid-concert.jpg"); }
-        /* line 166, ../../sources/scss/screen.scss */
+        /* line 165, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-portrait {
           float: left;
           width: 50%;
           padding-bottom: 95%;
           background-image: url("../images/grid-door.jpg"); }
-        /* line 173, ../../sources/scss/screen.scss */
+        /* line 172, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .photo-box-container {
           width: 50%; }
-        /* line 176, ../../sources/scss/screen.scss */
+        /* line 175, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-1 {
           padding: 4px;
           width: 100%;
           padding-bottom: 100%;
           background-image: url("../images/grid-jannok.jpg"); }
-        /* line 183, ../../sources/scss/screen.scss */
+        /* line 182, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-2 {
           padding: 4px;
           width: 100%;
           padding-bottom: 90%;
           background-image: url("../images/grid-fire.jpg"); }
-  /* line 194, ../../sources/scss/screen.scss */
+  /* line 193, ../../sources/scss/screen.scss */
   .content-container .opening-times-container {
     margin-top: 100px;
     width: 100%;
-    height: 600px;
+    height: auto;
     position: relative;
     display: inline-block;
     background-image: url("/images/bg-trees.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 40px; }
+    padding-top: 40px; }
+    /* line 205, ../../sources/scss/screen.scss */
+    .content-container .opening-times-container .season-title {
+      margin-top: 60px; }
+      /* line 207, ../../sources/scss/screen.scss */
+      .content-container .opening-times-container .season-title h4 {
+        color: #29282c;
+        letter-spacing: 6px;
+        font-size: 1.2em; }
+      /* line 212, ../../sources/scss/screen.scss */
+      .content-container .opening-times-container .season-title p {
+        margin-top: 8px;
+        text-align: center;
+        font-family: "adobe-garamond-pro",sans-serif;
+        font-style: italic;
+        font-size: 1.6em;
+        font-weight: 200;
+        color: #787878; }
+    /* line 222, ../../sources/scss/screen.scss */
+    .content-container .opening-times-container .times {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 35px;
+      padding: 10px;
+      color: #2d302f;
+      display: inline-block;
+      width: 100%; }
+      /* line 231, ../../sources/scss/screen.scss */
+      .content-container .opening-times-container .times .time-line {
+        width: 100%;
+        height: 100%;
+        padding: 0px 20px 0px 20px; }
+        /* line 235, ../../sources/scss/screen.scss */
+        .content-container .opening-times-container .times .time-line .date-p {
+          float: left;
+          width: 50%;
+          text-align: left; }
+        /* line 240, ../../sources/scss/screen.scss */
+        .content-container .opening-times-container .times .time-line .time-p {
+          float: left;
+          width: 50%;
+          text-align: right; }
+        /* line 245, ../../sources/scss/screen.scss */
+        .content-container .opening-times-container .times .time-line p {
+          font-size: 1.4em;
+          font-weight: 200; }
+      /* line 250, ../../sources/scss/screen.scss */
+      .content-container .opening-times-container .times .sep {
+        float: left;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: gainsboro;
+        margin: 10px 0px 10px 0px; }
+    /* line 259, ../../sources/scss/screen.scss */
+    .content-container .opening-times-container .fb {
+      margin: 40px 0px 80px 0px; }
+      /* line 261, ../../sources/scss/screen.scss */
+      .content-container .opening-times-container .fb p {
+        font-size: 1.3em;
+        font-weight: 200; }
 
-/* line 210, ../../sources/scss/screen.scss */
+/* line 269, ../../sources/scss/screen.scss */
+.bordered-button {
+  display: inline-block;
+  border: 2px solid #7a91c3;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.2em 5.5em;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  color: #4964a2;
+  margin-top: 1em; }
+  /* line 280, ../../sources/scss/screen.scss */
+  .bordered-button:hover {
+    border: 2px solid #565656;
+    color: black; }
+
+/* line 286, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -406,11 +484,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 221, ../../sources/scss/screen.scss */
+  /* line 297, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 225, ../../sources/scss/screen.scss */
+    /* line 301, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -422,17 +500,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 233, ../../sources/scss/screen.scss */
+      /* line 309, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 236, ../../sources/scss/screen.scss */
+        /* line 312, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 243, ../../sources/scss/screen.scss */
+      /* line 319, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -448,7 +526,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 259, ../../sources/scss/screen.scss */
+/* line 335, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -456,13 +534,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 267, ../../sources/scss/screen.scss */
+  /* line 343, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 272, ../../sources/scss/screen.scss */
+  /* line 348, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 277, ../../sources/scss/screen.scss */
+  /* line 353, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;
