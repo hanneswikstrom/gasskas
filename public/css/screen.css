@@ -141,13 +141,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 /* Large screens ----------- */
-/* line 35, ../../sources/scss/_base.scss */
+/* line 36, ../../sources/scss/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 39, ../../sources/scss/_base.scss */
+/* line 40, ../../sources/scss/_base.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -158,18 +158,18 @@ html, body {
   font-family: Verlag, Helvetica Neue, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-/* line 51, ../../sources/scss/_base.scss */
+/* line 52, ../../sources/scss/_base.scss */
 a {
   text-decoration: none;
   color: white; }
 
-/* line 57, ../../sources/scss/_base.scss */
+/* line 58, ../../sources/scss/_base.scss */
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, li {
   margin: 0;
   padding: 0; }
 
-/* line 62, ../../sources/scss/_base.scss */
+/* line 63, ../../sources/scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   font-weight: bold; }
@@ -254,6 +254,31 @@ p {
   width: 100%;
   background-color: white; }
   /* line 60, ../../sources/scss/screen.scss */
+  .content-container .section-title {
+    width: 100%;
+    position: relative;
+    padding: 25px; }
+    /* line 65, ../../sources/scss/screen.scss */
+    .content-container .section-title h1 {
+      font-family: Verlag, Helvetica Neue, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1.5em;
+      letter-spacing: 0.3em; }
+      /* line 71, ../../sources/scss/screen.scss */
+      .content-container .section-title h1:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 80px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 0px;
+        background-color: #c8c8c8; }
+  /* line 84, ../../sources/scss/screen.scss */
   .content-container .about {
     background-image: url("../images/logo-house.png");
     background-size: 200px auto;
@@ -265,11 +290,11 @@ p {
     padding-right: 120px;
     max-width: 850px;
     margin: auto; }
-  /* line 73, ../../sources/scss/screen.scss */
+  /* line 97, ../../sources/scss/screen.scss */
   .content-container .grid-section {
     width: 870px;
     margin: 0 auto; }
-    /* line 77, ../../sources/scss/screen.scss */
+    /* line 101, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-left {
       width: 50%;
       float: left;
@@ -278,7 +303,7 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 85, ../../sources/scss/screen.scss */
+    /* line 108, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-right {
       width: 50%;
       float: right;
@@ -287,77 +312,89 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-    /* line 93, ../../sources/scss/screen.scss */
+    /* line 115, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-quote {
       width: 100%;
       padding: 5.3em 4em 5.3em 4em; }
-      /* line 96, ../../sources/scss/screen.scss */
+      /* line 118, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-quote h3 {
-        color: #2b8879;
+        color: #248879;
         text-align: center;
         font-family: "adobe-garamond-pro",sans-serif;
         font-style: italic;
         font-size: 2.0em;
         font-weight: 200; }
-    /* line 106, ../../sources/scss/screen.scss */
+    /* line 128, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-info {
       width: 100%;
       padding: 3.1em;
       float: left; }
-    /* line 112, ../../sources/scss/screen.scss */
+    /* line 135, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-photo-container {
       position: relative; }
-      /* line 115, ../../sources/scss/screen.scss */
+      /* line 138, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-photo-container .photo-wrapper {
         overflow: hidden;
         position: relative;
         padding: 4px; }
-        /* line 119, ../../sources/scss/screen.scss */
+        /* line 142, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo {
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover; }
-        /* line 123, ../../sources/scss/screen.scss */
+        /* line 146, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
           width: 100%;
           padding-bottom: 50%;
           background-image: url("../images/grid-lemmel.jpg"); }
-        /* line 129, ../../sources/scss/screen.scss */
+        /* line 152, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
           float: right;
           width: 65%;
           padding-bottom: 30%;
           background-image: url("../images/grid-gasskas.jpg"); }
-        /* line 136, ../../sources/scss/screen.scss */
+        /* line 159, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
           float: right;
           width: 65%;
           padding-bottom: 50%;
           background-image: url("../images/grid-concert.jpg"); }
-        /* line 143, ../../sources/scss/screen.scss */
+        /* line 166, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-portrait {
           float: left;
           width: 50%;
           padding-bottom: 95%;
           background-image: url("../images/grid-door.jpg"); }
-        /* line 150, ../../sources/scss/screen.scss */
+        /* line 173, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .photo-box-container {
           width: 50%; }
-        /* line 153, ../../sources/scss/screen.scss */
+        /* line 176, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-1 {
           padding: 4px;
           width: 100%;
           padding-bottom: 100%;
           background-image: url("../images/grid-jannok.jpg"); }
-        /* line 160, ../../sources/scss/screen.scss */
+        /* line 183, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-2 {
           padding: 4px;
           width: 100%;
           padding-bottom: 90%;
           background-image: url("../images/grid-fire.jpg"); }
+  /* line 194, ../../sources/scss/screen.scss */
+  .content-container .opening-times-container {
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: inline-block;
+    background-image: url("/images/bg-trees.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px; }
 
-/* line 172, ../../sources/scss/screen.scss */
+/* line 210, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -369,11 +406,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 183, ../../sources/scss/screen.scss */
+  /* line 221, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 187, ../../sources/scss/screen.scss */
+    /* line 225, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -385,17 +422,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 195, ../../sources/scss/screen.scss */
+      /* line 233, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 198, ../../sources/scss/screen.scss */
+        /* line 236, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 205, ../../sources/scss/screen.scss */
+      /* line 243, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -411,7 +448,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 221, ../../sources/scss/screen.scss */
+/* line 259, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -419,13 +456,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 230, ../../sources/scss/screen.scss */
+  /* line 267, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 235, ../../sources/scss/screen.scss */
+  /* line 272, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 240, ../../sources/scss/screen.scss */
+  /* line 277, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;
