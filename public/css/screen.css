@@ -461,9 +461,48 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 60px; }
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    /* line 280, ../../sources/scss/screen.scss */
+    .content-container .our-menu-container .lunch-container {
+      max-width: 700px;
+      width: 100%;
+      height: 600px;
+      background-color: #fff;
+      margin: auto;
+      margin-top: 100px;
+      border: 1px solid #bebebe;
+      position: relative; }
+      /* line 290, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .lunch-container .course-title {
+        z-index: 100;
+        position: absolute;
+        top: -6px;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 190px; }
+      /* line 300, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .lunch-container h4 {
+        color: #29282c;
+        letter-spacing: 6px;
+        font-size: 1.2em; }
+    /* line 306, ../../sources/scss/screen.scss */
+    .content-container .our-menu-container .lunch-container:before {
+      background: none;
+      border: 1px solid #bebebe;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      pointer-events: none; }
 
-/* line 281, ../../sources/scss/screen.scss */
+/* line 321, ../../sources/scss/screen.scss */
 .bordered-button {
   display: inline-block;
   border: 2px solid #7a91c3;
@@ -477,12 +516,12 @@ p {
   transition: all 0.15s;
   color: #4964a2;
   margin-top: 1em; }
-  /* line 292, ../../sources/scss/screen.scss */
+  /* line 332, ../../sources/scss/screen.scss */
   .bordered-button:hover {
     border: 2px solid #565656;
     color: black; }
 
-/* line 298, ../../sources/scss/screen.scss */
+/* line 338, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -494,11 +533,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 309, ../../sources/scss/screen.scss */
+  /* line 349, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 313, ../../sources/scss/screen.scss */
+    /* line 353, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -510,17 +549,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 321, ../../sources/scss/screen.scss */
+      /* line 361, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 324, ../../sources/scss/screen.scss */
+        /* line 364, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 331, ../../sources/scss/screen.scss */
+      /* line 371, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -536,7 +575,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 347, ../../sources/scss/screen.scss */
+/* line 387, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -544,13 +583,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 355, ../../sources/scss/screen.scss */
+  /* line 395, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 360, ../../sources/scss/screen.scss */
+  /* line 400, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 365, ../../sources/scss/screen.scss */
+  /* line 405, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;
