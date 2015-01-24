@@ -319,68 +319,68 @@ p {
       .content-container .grid-section .grid-quote h3 {
         color: #248879;
         text-align: center;
-        font-family: "adobe-garamond-pro",sans-serif;
+        font-family: "adobe-garamond-pro",Garamond, Georgia, serif;
         font-style: italic;
         font-size: 2.0em;
         font-weight: 200; }
-    /* line 127, ../../sources/scss/screen.scss */
+    /* line 126, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-info {
       width: 100%;
       padding: 3.1em;
       float: left; }
-    /* line 134, ../../sources/scss/screen.scss */
+    /* line 133, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-photo-container {
       position: relative; }
-      /* line 137, ../../sources/scss/screen.scss */
+      /* line 136, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-photo-container .photo-wrapper {
         overflow: hidden;
         position: relative;
         padding: 4px; }
-        /* line 141, ../../sources/scss/screen.scss */
+        /* line 140, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo {
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover; }
-        /* line 145, ../../sources/scss/screen.scss */
+        /* line 144, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
           width: 100%;
           padding-bottom: 50%;
           background-image: url("../images/grid-lemmel.jpg"); }
-        /* line 151, ../../sources/scss/screen.scss */
+        /* line 150, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
           float: right;
           width: 65%;
           padding-bottom: 30%;
           background-image: url("../images/grid-gasskas.jpg"); }
-        /* line 158, ../../sources/scss/screen.scss */
+        /* line 157, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
           float: right;
           width: 65%;
           padding-bottom: 50%;
           background-image: url("../images/grid-concert.jpg"); }
-        /* line 165, ../../sources/scss/screen.scss */
+        /* line 164, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-portrait {
           float: left;
           width: 50%;
           padding-bottom: 95%;
           background-image: url("../images/grid-door.jpg"); }
-        /* line 172, ../../sources/scss/screen.scss */
+        /* line 171, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .photo-box-container {
           width: 50%; }
-        /* line 175, ../../sources/scss/screen.scss */
+        /* line 174, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-1 {
           padding: 4px;
           width: 100%;
           padding-bottom: 100%;
           background-image: url("../images/grid-jannok.jpg"); }
-        /* line 182, ../../sources/scss/screen.scss */
+        /* line 181, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-2 {
           padding: 4px;
           width: 100%;
           padding-bottom: 90%;
           background-image: url("../images/grid-fire.jpg"); }
-  /* line 193, ../../sources/scss/screen.scss */
+  /* line 192, ../../sources/scss/screen.scss */
   .content-container .opening-times-container {
     margin-top: 100px;
     width: 100%;
@@ -392,15 +392,15 @@ p {
     background-position: center;
     text-align: center;
     padding-top: 40px; }
-    /* line 205, ../../sources/scss/screen.scss */
+    /* line 204, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .season-title {
       margin-top: 60px; }
-      /* line 207, ../../sources/scss/screen.scss */
+      /* line 206, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .season-title h4 {
         color: #29282c;
         letter-spacing: 6px;
         font-size: 1.2em; }
-      /* line 212, ../../sources/scss/screen.scss */
+      /* line 211, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .season-title p {
         margin-top: 8px;
         text-align: center;
@@ -409,7 +409,7 @@ p {
         font-size: 1.6em;
         font-weight: 200;
         color: #787878; }
-    /* line 222, ../../sources/scss/screen.scss */
+    /* line 221, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .times {
       max-width: 600px;
       margin: auto;
@@ -418,26 +418,26 @@ p {
       color: #2d302f;
       display: inline-block;
       width: 100%; }
-      /* line 231, ../../sources/scss/screen.scss */
+      /* line 230, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .times .time-line {
         width: 100%;
         height: 100%;
         padding: 0px 20px 0px 20px; }
-        /* line 235, ../../sources/scss/screen.scss */
+        /* line 234, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line .date-p {
           float: left;
           width: 50%;
           text-align: left; }
-        /* line 240, ../../sources/scss/screen.scss */
+        /* line 239, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line .time-p {
           float: left;
           width: 50%;
           text-align: right; }
-        /* line 245, ../../sources/scss/screen.scss */
+        /* line 244, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line p {
           font-size: 1.4em;
           font-weight: 200; }
-      /* line 250, ../../sources/scss/screen.scss */
+      /* line 249, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .times .sep {
         float: left;
         content: "";
@@ -445,17 +445,17 @@ p {
         height: 1px;
         background-color: gainsboro;
         margin: 10px 0px 10px 0px; }
-    /* line 259, ../../sources/scss/screen.scss */
+    /* line 258, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .fb {
       margin: 40px 0px 80px 0px; }
-      /* line 261, ../../sources/scss/screen.scss */
+      /* line 260, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .fb p {
         font-size: 1.3em;
         font-weight: 200; }
-  /* line 268, ../../sources/scss/screen.scss */
+  /* line 267, ../../sources/scss/screen.scss */
   .content-container .our-menu-container {
     width: 100%;
-    height: 600px;
+    height: auto;
     position: relative;
     display: inline-block;
     background-size: cover;
@@ -463,19 +463,23 @@ p {
     text-align: center;
     padding-top: 60px;
     padding-left: 10px;
-    padding-right: 10px; }
-    /* line 280, ../../sources/scss/screen.scss */
-    .content-container .our-menu-container .lunch-container {
+    padding-right: 10px;
+    margin-bottom: 60px; }
+    /* line 279, ../../sources/scss/screen.scss */
+    .content-container .our-menu-container p {
+      font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif; }
+    /* line 282, ../../sources/scss/screen.scss */
+    .content-container .our-menu-container .course-container {
       max-width: 700px;
       width: 100%;
-      height: 600px;
+      height: auto;
       background-color: #fff;
       margin: auto;
       margin-top: 100px;
       border: 1px solid #bebebe;
       position: relative; }
-      /* line 290, ../../sources/scss/screen.scss */
-      .content-container .our-menu-container .lunch-container .course-title {
+      /* line 292, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .course-container .course-title {
         z-index: 100;
         position: absolute;
         top: -6px;
@@ -484,13 +488,80 @@ p {
         right: 0;
         margin: 0 auto;
         width: 190px; }
-      /* line 300, ../../sources/scss/screen.scss */
-      .content-container .our-menu-container .lunch-container h4 {
+      /* line 302, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .course-container h4 {
         color: #29282c;
         letter-spacing: 6px;
         font-size: 1.2em; }
-    /* line 306, ../../sources/scss/screen.scss */
-    .content-container .our-menu-container .lunch-container:before {
+      /* line 307, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .course-container .lunch-items {
+        margin-top: 4em;
+        margin-bottom: 3.5em; }
+        /* line 310, ../../sources/scss/screen.scss */
+        .content-container .our-menu-container .course-container .lunch-items .lunch-item {
+          margin-top: 2em; }
+          /* line 312, ../../sources/scss/screen.scss */
+          .content-container .our-menu-container .course-container .lunch-items .lunch-item h3 {
+            font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
+            font-variant: small-caps;
+            font-size: 1.7em;
+            color: #646469; }
+          /* line 318, ../../sources/scss/screen.scss */
+          .content-container .our-menu-container .course-container .lunch-items .lunch-item p {
+            font-style: italic;
+            font-size: 1.4em;
+            color: #78787d; }
+          /* line 323, ../../sources/scss/screen.scss */
+          .content-container .our-menu-container .course-container .lunch-items .lunch-item p.price {
+            color: #248879;
+            font-size: 1.6em; }
+      /* line 329, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .course-container .dinner-description {
+        margin-top: 2em; }
+        /* line 331, ../../sources/scss/screen.scss */
+        .content-container .our-menu-container .course-container .dinner-description p {
+          font-style: italic;
+          font-size: 1.6em;
+          color: #3e4241; }
+        /* line 336, ../../sources/scss/screen.scss */
+        .content-container .our-menu-container .course-container .dinner-description p.price {
+          color: #248879; }
+      /* line 340, ../../sources/scss/screen.scss */
+      .content-container .our-menu-container .course-container .dinner-items {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 3.5em; }
+        /* line 345, ../../sources/scss/screen.scss */
+        .content-container .our-menu-container .course-container .dinner-items .dinner-item {
+          margin-top: 2em; }
+          /* line 347, ../../sources/scss/screen.scss */
+          .content-container .our-menu-container .course-container .dinner-items .dinner-item h3 {
+            font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
+            font-variant: small-caps;
+            font-size: 1.5em;
+            color: #646469; }
+          /* line 353, ../../sources/scss/screen.scss */
+          .content-container .our-menu-container .course-container .dinner-items .dinner-item p {
+            font-style: italic;
+            font-size: 1.3em;
+            color: #78787d;
+            line-height: 1.2em; }
+        /* line 360, ../../sources/scss/screen.scss */
+        .content-container .our-menu-container .course-container .dinner-items .dot {
+          margin: auto;
+          margin-top: 20px;
+          margin-bottom: -10px;
+          width: 6px;
+          height: 6px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #aaaaaa; }
+    /* line 371, ../../sources/scss/screen.scss */
+    .content-container .our-menu-container .course-container:before {
       background: none;
       border: 1px solid #bebebe;
       content: "";
@@ -501,8 +572,18 @@ p {
       right: 4px;
       bottom: 4px;
       pointer-events: none; }
+  /* line 384, ../../sources/scss/screen.scss */
+  .content-container .course-info {
+    margin-top: 1.5em; }
+    /* line 386, ../../sources/scss/screen.scss */
+    .content-container .course-info p {
+      font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
+      font-style: italic;
+      color: #6c6a73;
+      font-size: 1.3em;
+      line-height: 1.3em; }
 
-/* line 321, ../../sources/scss/screen.scss */
+/* line 396, ../../sources/scss/screen.scss */
 .bordered-button {
   display: inline-block;
   border: 2px solid #7a91c3;
@@ -516,12 +597,12 @@ p {
   transition: all 0.15s;
   color: #4964a2;
   margin-top: 1em; }
-  /* line 332, ../../sources/scss/screen.scss */
+  /* line 407, ../../sources/scss/screen.scss */
   .bordered-button:hover {
     border: 2px solid #565656;
     color: black; }
 
-/* line 338, ../../sources/scss/screen.scss */
+/* line 413, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -533,11 +614,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 349, ../../sources/scss/screen.scss */
+  /* line 424, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 353, ../../sources/scss/screen.scss */
+    /* line 428, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -549,17 +630,17 @@ p {
       display: inline-block;
       padding-left: 2.5em;
       padding-right: 2.5em; }
-      /* line 361, ../../sources/scss/screen.scss */
+      /* line 436, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 364, ../../sources/scss/screen.scss */
+        /* line 439, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 371, ../../sources/scss/screen.scss */
+      /* line 446, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -575,7 +656,7 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 387, ../../sources/scss/screen.scss */
+/* line 462, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -583,13 +664,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 395, ../../sources/scss/screen.scss */
+  /* line 470, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 400, ../../sources/scss/screen.scss */
+  /* line 475, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 405, ../../sources/scss/screen.scss */
+  /* line 480, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;
