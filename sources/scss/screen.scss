@@ -3,6 +3,12 @@
 @import "base";
 @import "icons";
 
+@media #{$mq-small} {
+   .not-small {
+      display: none;
+   }
+}
+
 .container {
    width: 100%;
    max-width: 960px;
@@ -42,6 +48,11 @@
 	top: 30%;
 	@include transform (translateX(-50%));
 	font-size: 14em;
+
+	@media #{$mq-small} {
+	   top:20%;
+	   font-size:9em;
+	}
 }
 
 p {
@@ -49,6 +60,104 @@ p {
 	line-height: 1.7em;
 	font-weight: normal;
 	color: $color-text-darkgray;
+}
+
+.navbar {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	top:-40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:bold;
+	letter-spacing: 4px;
+	font-size:0.8em;
+	z-index: 700;
+
+	@media #{$mq-small} {
+	   //top:20%;
+	   font-size:0.75em;
+	   letter-spacing: 2px;
+	}
+
+	ul {
+		padding:0;
+		margin:0;
+
+		li {
+			position: relative;
+			@include opacity (0.65);
+			@include transition(opacity 0.2s);
+			display:inline-block;
+			padding-left: 2.5em;
+			padding-right: 2.5em;
+			padding-top:2px;
+			@media #{$mq-small} {
+			   @include opacity (0.9);
+			   padding-left:9px;
+			   padding-right:9px;
+			}
+			@media #{$mq-big} {
+				&:hover {
+					@include opacity(1);
+
+					&:after {
+						width: 70%;
+						left: 15%;
+						@include opacity(1);
+					}
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: -8px;
+					height: 1px;
+					width: 0%;
+					left: 50%;
+					background-color: white;
+					@include opacity(0.65);
+					@include transition(all 0.2s);
+				}
+			}
+			@media #{$mq-small} {
+				&:first-child {
+					display:none;
+				}
+			}
+		}
+	}								
+}
+
+#black-nav {
+	position: fixed;
+	top: 0px;
+	padding-top:20px;
+	padding-bottom:32px;
+	opacity: 0;
+	overflow: hidden;
+	
+	a {
+		color: black;
+	}
+
+	li {
+		&:after {
+			background-color: black;
+		}
+	}
+
+	.navbar-bg {
+		position: absolute;
+		left: 50%;
+		@include transform(translateX(-50%));
+		top:-20px;
+		width: 100%;
+		max-width: 900px;
+		height: 72px;
+		background-color: white;
+		border-bottom: 1px solid rgba(220,220,220,1);
+	}
 }
 
 .content-container {
@@ -66,6 +175,11 @@ p {
 			font-weight: normal;
 			font-size: 1.5em;
 			letter-spacing: 0.3em;
+
+			@media #{$mq-small} {
+				font-size:1.3em;
+				letter-spacing: 0.2em;
+			}
 
 			&:after {
 				content: "";
@@ -92,10 +206,20 @@ p {
 		padding-right: 120px;
 		max-width: $max-width;
 		margin: auto;
+
+		@media #{$mq-small} {
+			background-position: center 10%;
+			padding: 260px 20px 20px 20px;
+			text-align: center;
+		}
 	}
 	.grid-section {
 		width: 870px;
 		margin: 0 auto;
+
+		@media #{$mq-small} {
+			width: 100%;
+		}
 
 		.grid-container-left {
 			width: 50%;
@@ -103,6 +227,10 @@ p {
 			text-align: right;
 			position: relative;
 			@include box-sizing(border-box);
+
+			@media #{$mq-small} {
+				width: 100%;
+			}
 		}
 		.grid-container-right {
 			width: 50%;
@@ -110,6 +238,9 @@ p {
 			text-align: left;
 			position: relative;
 			@include box-sizing(border-box); 
+			@media #{$mq-small} {
+				display: none;
+			}
 		}
 		.grid-quote {
 			width: 100%;
@@ -122,6 +253,9 @@ p {
   				font-size:2.0em;
   				font-weight: 200;
   			}
+  			@media #{$mq-small} {
+				padding:3em 0em 3em 0em;
+			}
 		}
 		.grid-info {
 			@extend %clearfix;
@@ -146,6 +280,9 @@ p {
 					padding-bottom: 50%;
 					//background-image: url(https://ununsplash.imgix.net/reserve/J3URHssSQyqifuJVcgKu_Wald.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050);
 					background-image: url('../images/grid-lemmel.jpg');
+					@media #{$mq-small} {
+						padding-bottom: 55%;
+					}
 				}
 				.grid-photo-landscape-2 {
 					float: right;
@@ -153,6 +290,10 @@ p {
 					padding-bottom: 30%;
 					//background-image: url(https://ununsplash.imgix.net/uploads/1412825195419af52b492/8bc72ed7?fit=crop&fm=jpg&h=700&q=75&w=1050);
 					background-image: url('../images/grid-gasskas.jpg');
+					@media #{$mq-small} {
+						width: 100%;
+						padding-bottom: 50%;
+					}
 				}
 				.grid-photo-landscape-3 {
 					float: right;
@@ -160,6 +301,10 @@ p {
 					padding-bottom: 50%;
 					//background-image: url(https://ununsplash.imgix.net/photo-1415226620463-aedee27159c5?fit=crop&fm=jpg&h=800&q=75&w=1050);
 					background-image: url('../images/grid-concert.jpg');
+					@media #{$mq-small} {
+						width: 100%;
+						padding-bottom: 70%;
+					}
 				}
 				.grid-photo-portrait {
 					float: left;
@@ -201,21 +346,36 @@ p {
 		text-align:center;
 		padding-top: 40px;
 
+		@media #{$mq-small} {
+			margin-top:10px;
+		}
+
 		.season-title {
 			margin-top: 60px;
+			@media #{$mq-small} {
+				margin-top:40px;
+			}
 			h4 {
 				color: rgba(41,40,44,1);
 				letter-spacing: 6px;
 				font-size: 1.2em;
+				@media #{$mq-small} {
+					font-size:1em;
+					letter-spacing: 4px;
+				}
 			}
 			p {
 				margin-top: 8px;
 				text-align: center;
-  				font-family: "adobe-garamond-pro",sans-serif;
+  				font-family: "adobe-garamond-pro",Garamond, Georgia, serif;
   				font-style:italic;
   				font-size:1.6em;
   				font-weight: 200;
   				color: rgba(120,120,120,1);
+
+  				@media #{$mq-small} {
+					font-size:1.3em;
+				}
 			}
 		}
 		.times {
@@ -227,10 +387,17 @@ p {
 			display:inline-block;
 			width: 100%;
 
+			@media #{$mq-small} {
+				margin-top:20px;
+			}
+
 			.time-line {
 				width: 100%;
 				height: 100%;
 				padding: 0px 20px 0px 20px;
+				@media #{$mq-small} {
+					padding: 0px 10px 0px 10px;
+				}
 				.date-p {
 					float:left;
 					width: 50%;
@@ -244,6 +411,9 @@ p {
 				p {
 					font-size:1.4em;
 					font-weight: 200;
+					@media #{$mq-small} {
+						font-size:1.2em;
+					}
 				}
 			}
 			.sep {
@@ -260,6 +430,14 @@ p {
 			p {
 				font-size:1.3em;
 				font-weight: 200;
+				@media #{$mq-small} {
+					font-size:1em;
+				}
+			}
+			@media #{$mq-small} {
+				a {
+					font-size:0.9em;
+				}
 			}
 		}
 	}
@@ -268,14 +446,17 @@ p {
 		width: 100%;
 		height: auto;
 		position: relative;
-		display: inline-block;
-		background-size: cover;
-		background-position: center;
 		text-align:center;
 		padding-top: 60px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
 		margin-bottom: 60px;
+
+		@media #{$mq-small} {
+			padding-top:40px;
+			margin-bottom: 40px;
+		}
+
 		p {
 			font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
 		}
@@ -288,6 +469,9 @@ p {
 			margin-top: 100px;
 			border: 1px solid rgba(190,190,190,1);
 		    position: relative;
+		    @media #{$mq-small} {
+		    	margin-top:60px;
+		    }
 
 		    .course-title {
 		    	z-index: 100;
@@ -305,8 +489,13 @@ p {
 				font-size: 1.2em;
 			}
 			.lunch-items {
+				margin: auto;
 				margin-top: 4em;
 				margin-bottom: 3.5em;
+				@media #{$mq-small} {
+					width:90%;
+				}
+
 				.lunch-item {
 					margin-top:2em;
 					h3 {
@@ -314,11 +503,17 @@ p {
 						font-variant: small-caps;
 						font-size:1.7em;
 						color: rgba(100,100,105,1);
+						@media #{$mq-small} {
+							font-size:1.5em;
+						}
 					}
 					p {
 						font-style: italic;
 						font-size:1.4em;
 						color: rgba(120,120,125,1);
+						@media #{$mq-small} {
+							font-size:1.2em;
+						}
 					}
 					p.price {
 						color: $color-teal;
@@ -342,6 +537,9 @@ p {
 				margin:auto;
 				margin-top: 2em;
 				margin-bottom: 3.5em;
+				@media #{$mq-small} {
+					width:85%;
+				}
 				.dinner-item {
 					margin-top:2em;
 					h3 {
@@ -355,6 +553,9 @@ p {
 						font-size:1.3em;
 						color: rgba(120,120,125,1);
 						line-height: 1.2em;
+						@media #{$mq-small} {
+							font-size:1.2em;
+						}
 					}
 				}
 				.dot {
@@ -364,7 +565,7 @@ p {
 					width:6px;
 					height:6px;
 					@include border-radius(3px);
-					background-color: rgba(170,170,170,1);
+					background-color: rgba(200,200,200,1);
 				}
 			}
 		}
@@ -383,6 +584,9 @@ p {
 	}
 	.course-info {
 		margin-top:1.5em;
+		@media #{$mq-small} {
+			margin-top:1em;
+		}
 		p {
 			font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
 			font-style: italic;
@@ -394,11 +598,14 @@ p {
 
 	.contact-container {
 		width: 100%;
-		height: 600px;
+		height: auto;
 		position: relative;
 		display: inline-block;
 		text-align: center;
 		padding-top: 60px;
+		@media #{$mq-small} {
+			padding-top:40px;
+		}
 
 		p {
 			font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
@@ -411,8 +618,10 @@ p {
 			font-size:1.7em;
 			font-weight: 200;
 			line-height: 1.4em;
-			&:hover {
-				color: black;
+			@media #{$mq-big} {
+				&:hover {
+					color: black;
+				}
 			}
 		}
 
@@ -435,8 +644,11 @@ p {
 		}
 		.address {
 			margin-top:3em;
-			padding-bottom:3em;
+			padding-bottom:6em;
 			height: auto;
+			@media #{$mq-small} {
+				padding-bottom:3em;
+			}
 		}
 	}
 }
@@ -452,59 +664,18 @@ p {
    color:rgba(73,100,162,1);
    margin-top:1em;
 
-   &:hover {
-      border: 2px solid $color-text;
-      color:black;
+   @media #{$mq-small} {
+   	padding: 1.2em 0em;
+   	width:90%;
+   	margin-left: 5%;
+   	margin-right:5%;
    }
-}
-
-.navbar {
-	position: absolute;
-	height: 40px;
-	width: 100%;
-	top:-40px;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight:bold;
-	letter-spacing: 4px;
-	font-size:0.8em;
-	z-index: 700;
-	ul {
-		padding:0;
-		margin:0;
-
-		li {
-			position: relative;
-			@include opacity (0.65);
-			@include transition(opacity 0.2s);
-			display:inline-block;
-			padding-left: 2.5em;
-			padding-right: 2.5em;
-			padding-top:2px;
-			
-			&:hover {
-				@include opacity(1);
-
-				&:after {
-					width: 70%;
-					left: 15%;
-					@include opacity(1);
-				}
-			}
-
-			&:after {
-				content: "";
-				position: absolute;
-				bottom: -8px;
-				height: 1px;
-				width: 0%;
-				left: 50%;
-				background-color: white;
-				@include opacity(0.65);
-				@include transition(all 0.2s);
-			}
-		}
-	}								
+   @media #{$mq-big} {
+	   &:hover {
+	      border: 2px solid $color-text;
+	      color:black;
+	   }
+	}
 }
 
 .footer {
@@ -516,6 +687,9 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	@media #{$mq-small} {
+		background-position: right 0px bottom -6px;
+	}
 	.footer-logo {
 		text-align: center;
 		font-family: sans-serif;
@@ -525,36 +699,9 @@ p {
 		margin: auto;
 		font-size: 14em;
 		padding-bottom:2em;
+		@media #{$mq-small} {
+			font-size:9em;
+			padding-bottom: 1.6em;
+		}
 	}
 }
-
-#black-nav {
-		position: fixed;
-		top: 0px;
-		padding-top:20px;
-		padding-bottom:32px;
-		opacity: 0;
-		overflow: hidden;
-		
-		a {
-			color: black;
-		}
-
-		li {
-			&:after {
-				background-color: black;
-			}
-		}
-
-		.navbar-bg {
-			position: absolute;
-			left: 50%;
-			@include transform(translateX(-50%));
-			top:-20px;
-			width: 100%;
-			max-width: 900px;
-			height: 72px;
-			background-color: white;
-			border-bottom: 1px solid rgba(220,220,220,1);
-		}
-	}
