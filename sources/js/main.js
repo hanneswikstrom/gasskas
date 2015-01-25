@@ -52,18 +52,20 @@ $(function() {
 		$('#black-nav').css({opacity: blackOpacity});
 		var bgOpacity = Math.max(0, Math.min(0.95, (scrollTop-(navbarTop+($('.navbar-bg').height()/2)))/20));
 		$('.navbar-bg').css({opacity: bgOpacity});
-
-			// var opacity = 1 - (backgroundPositionTop / 600);
-			// opacity.toFixed(2);
-			// if (opacity > 1) {
-			//   opacity = 1;
-			// }
-
-			// $heros_desc.css({
-			//   transform: 'translate3d(0, ' + (backgroundPositionTop * -0.1) + 'px, 0) scale(' +scale + ', ' + scale + ')', // rotateX('+ Math.round((1 - opacity) * 180) +'deg)',
-			//   perspective: '1000px',
-			//   backfaceVisibility: 'hidden',
-			//   opacity: opacity
-			// });
-		});
+	});
+	$('a[href*=#]:not([href=#])').click(function() {
+		var home = ($(this).attr("href")=='#hero-container');
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	        || location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	           if (target.length) {
+	           	var targetOffset = (home) ? 0 : (target.offset().top-50);
+	             $('html,body').animate({
+	                 scrollTop: targetOffset
+	            }, 1000);
+	            return false;
+	        }
+	    }
+	});
 });
