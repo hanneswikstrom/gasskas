@@ -250,7 +250,7 @@ p {
 /* line 54, ../../sources/scss/screen.scss */
 .content-container {
   position: relative;
-  height: 1500px;
+  height: auto;
   width: 100%;
   background-color: white; }
   /* line 60, ../../sources/scss/screen.scss */
@@ -582,8 +582,56 @@ p {
       color: #6c6a73;
       font-size: 1.3em;
       line-height: 1.3em; }
+  /* line 395, ../../sources/scss/screen.scss */
+  .content-container .contact-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 60px; }
+    /* line 403, ../../sources/scss/screen.scss */
+    .content-container .contact-container p {
+      font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
+      font-style: italic;
+      font-size: 1.6em;
+      color: #55555a; }
+    /* line 409, ../../sources/scss/screen.scss */
+    .content-container .contact-container a {
+      color: #248879;
+      font-size: 1.7em;
+      font-weight: 200;
+      line-height: 1.4em; }
+      /* line 414, ../../sources/scss/screen.scss */
+      .content-container .contact-container a:hover {
+        color: black; }
+    /* line 419, ../../sources/scss/screen.scss */
+    .content-container .contact-container .contact {
+      margin-top: 3em;
+      height: auto;
+      position: relative;
+      padding-bottom: 3em; }
+      /* line 425, ../../sources/scss/screen.scss */
+      .content-container .contact-container .contact:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 60px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 0px;
+        background-color: #c8c8c8; }
+    /* line 436, ../../sources/scss/screen.scss */
+    .content-container .contact-container .address {
+      margin-top: 3em;
+      padding-bottom: 3em;
+      height: auto; }
 
-/* line 396, ../../sources/scss/screen.scss */
+/* line 444, ../../sources/scss/screen.scss */
 .bordered-button {
   display: inline-block;
   border: 2px solid #7a91c3;
@@ -597,12 +645,12 @@ p {
   transition: all 0.15s;
   color: #4964a2;
   margin-top: 1em; }
-  /* line 407, ../../sources/scss/screen.scss */
+  /* line 455, ../../sources/scss/screen.scss */
   .bordered-button:hover {
     border: 2px solid #565656;
     color: black; }
 
-/* line 413, ../../sources/scss/screen.scss */
+/* line 461, ../../sources/scss/screen.scss */
 .navbar {
   position: absolute;
   height: 40px;
@@ -614,11 +662,11 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  /* line 424, ../../sources/scss/screen.scss */
+  /* line 472, ../../sources/scss/screen.scss */
   .navbar ul {
     padding: 0;
     margin: 0; }
-    /* line 428, ../../sources/scss/screen.scss */
+    /* line 476, ../../sources/scss/screen.scss */
     .navbar ul li {
       position: relative;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
@@ -629,18 +677,19 @@ p {
       transition: opacity 0.2s;
       display: inline-block;
       padding-left: 2.5em;
-      padding-right: 2.5em; }
-      /* line 436, ../../sources/scss/screen.scss */
+      padding-right: 2.5em;
+      padding-top: 2px; }
+      /* line 485, ../../sources/scss/screen.scss */
       .navbar ul li:hover {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1; }
-        /* line 439, ../../sources/scss/screen.scss */
+        /* line 488, ../../sources/scss/screen.scss */
         .navbar ul li:hover:after {
           width: 70%;
           left: 15%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1; }
-      /* line 446, ../../sources/scss/screen.scss */
+      /* line 495, ../../sources/scss/screen.scss */
       .navbar ul li:after {
         content: "";
         position: absolute;
@@ -656,7 +705,27 @@ p {
         -o-transition: all 0.2s;
         transition: all 0.2s; }
 
-/* line 462, ../../sources/scss/screen.scss */
+/* line 510, ../../sources/scss/screen.scss */
+.footer {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-image: url("../images/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  /* line 519, ../../sources/scss/screen.scss */
+  .footer .footer-logo {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #191919;
+    margin: auto;
+    font-size: 14em;
+    padding-bottom: 2em; }
+
+/* line 531, ../../sources/scss/screen.scss */
 #black-nav {
   position: fixed;
   top: 0px;
@@ -664,13 +733,13 @@ p {
   padding-bottom: 32px;
   opacity: 0;
   overflow: hidden; }
-  /* line 470, ../../sources/scss/screen.scss */
+  /* line 539, ../../sources/scss/screen.scss */
   #black-nav a {
     color: black; }
-  /* line 475, ../../sources/scss/screen.scss */
+  /* line 544, ../../sources/scss/screen.scss */
   #black-nav li:after {
     background-color: black; }
-  /* line 480, ../../sources/scss/screen.scss */
+  /* line 549, ../../sources/scss/screen.scss */
   #black-nav .navbar-bg {
     position: absolute;
     left: 50%;
