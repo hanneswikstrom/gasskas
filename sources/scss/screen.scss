@@ -216,6 +216,9 @@ p {
 	.grid-section {
 		width: 870px;
 		margin: 0 auto;
+		@media #{$mq-tablet-portrait} {
+			width: 100%;
+		}
 
 		@media #{$mq-small} {
 			width: 100%;
@@ -245,6 +248,9 @@ p {
 		.grid-quote {
 			width: 100%;
 			padding: 5.3em 4em 5.3em 4em;
+			@media #{$mq-tablet-portrait} {
+				padding: 5.3em 2em 5.3em 2em;
+			}
 			h3 {
 				color: $color-teal;
 				text-align: center;

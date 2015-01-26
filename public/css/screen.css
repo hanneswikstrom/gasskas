@@ -415,11 +415,15 @@ p {
   .content-container .grid-section {
     width: 870px;
     margin: 0 auto; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+      /* line 216, ../../sources/scss/screen.scss */
+      .content-container .grid-section {
+        width: 100%; } }
     @media only screen and (max-width: 600px) {
       /* line 216, ../../sources/scss/screen.scss */
       .content-container .grid-section {
         width: 100%; } }
-    /* line 224, ../../sources/scss/screen.scss */
+    /* line 227, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-left {
       width: 50%;
       float: left;
@@ -429,10 +433,10 @@ p {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
       @media only screen and (max-width: 600px) {
-        /* line 224, ../../sources/scss/screen.scss */
+        /* line 227, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-container-left {
           width: 100%; } }
-    /* line 235, ../../sources/scss/screen.scss */
+    /* line 238, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-container-right {
       width: 50%;
       float: right;
@@ -442,14 +446,18 @@ p {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
       @media only screen and (max-width: 600px) {
-        /* line 235, ../../sources/scss/screen.scss */
+        /* line 238, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-container-right {
           display: none; } }
-    /* line 245, ../../sources/scss/screen.scss */
+    /* line 248, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-quote {
       width: 100%;
       padding: 5.3em 4em 5.3em 4em; }
-      /* line 248, ../../sources/scss/screen.scss */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* line 248, ../../sources/scss/screen.scss */
+        .content-container .grid-section .grid-quote {
+          padding: 5.3em 2em 5.3em 2em; } }
+      /* line 254, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-quote h3 {
         color: #248879;
         text-align: center;
@@ -458,81 +466,81 @@ p {
         font-size: 2.0em;
         font-weight: 200; }
       @media only screen and (max-width: 600px) {
-        /* line 245, ../../sources/scss/screen.scss */
+        /* line 248, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-quote {
           padding: 3em 0em 3em 0em; } }
-    /* line 260, ../../sources/scss/screen.scss */
+    /* line 266, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-info {
       width: 100%;
       padding: 3.1em;
       float: left; }
-    /* line 267, ../../sources/scss/screen.scss */
+    /* line 273, ../../sources/scss/screen.scss */
     .content-container .grid-section .grid-photo-container {
       position: relative; }
-      /* line 270, ../../sources/scss/screen.scss */
+      /* line 276, ../../sources/scss/screen.scss */
       .content-container .grid-section .grid-photo-container .photo-wrapper {
         overflow: hidden;
         position: relative;
         padding: 4px; }
-        /* line 274, ../../sources/scss/screen.scss */
+        /* line 280, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo {
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover; }
-        /* line 278, ../../sources/scss/screen.scss */
+        /* line 284, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
           width: 100%;
           padding-bottom: 50%;
           background-image: url("../images/grid-lemmel.jpg"); }
           @media only screen and (max-width: 600px) {
-            /* line 278, ../../sources/scss/screen.scss */
+            /* line 284, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
               padding-bottom: 55%; } }
-        /* line 287, ../../sources/scss/screen.scss */
+        /* line 293, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
           float: right;
           width: 65%;
           padding-bottom: 30%;
           background-image: url("../images/grid-gasskas.jpg"); }
           @media only screen and (max-width: 600px) {
-            /* line 287, ../../sources/scss/screen.scss */
+            /* line 293, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
               width: 100%;
               padding-bottom: 50%; } }
-        /* line 298, ../../sources/scss/screen.scss */
+        /* line 304, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
           float: right;
           width: 65%;
           padding-bottom: 50%;
           background-image: url("../images/grid-concert.jpg"); }
           @media only screen and (max-width: 600px) {
-            /* line 298, ../../sources/scss/screen.scss */
+            /* line 304, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
               width: 100%;
               padding-bottom: 70%; } }
-        /* line 309, ../../sources/scss/screen.scss */
+        /* line 315, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-portrait {
           float: left;
           width: 50%;
           padding-bottom: 95%;
           background-image: url("../images/grid-door.jpg"); }
-        /* line 316, ../../sources/scss/screen.scss */
+        /* line 322, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .photo-box-container {
           width: 50%; }
-        /* line 319, ../../sources/scss/screen.scss */
+        /* line 325, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-1 {
           padding: 4px;
           width: 100%;
           padding-bottom: 100%;
           background-image: url("../images/grid-jannok.jpg"); }
-        /* line 326, ../../sources/scss/screen.scss */
+        /* line 332, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-box-2 {
           padding: 4px;
           width: 100%;
           padding-bottom: 90%;
           background-image: url("../images/grid-fire.jpg"); }
-  /* line 337, ../../sources/scss/screen.scss */
+  /* line 343, ../../sources/scss/screen.scss */
   .content-container .opening-times-container {
     margin-top: 100px;
     width: 100%;
@@ -545,27 +553,27 @@ p {
     text-align: center;
     padding-top: 40px; }
     @media only screen and (max-width: 600px) {
-      /* line 337, ../../sources/scss/screen.scss */
+      /* line 343, ../../sources/scss/screen.scss */
       .content-container .opening-times-container {
         margin-top: 10px; } }
-    /* line 353, ../../sources/scss/screen.scss */
+    /* line 359, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .season-title {
       margin-top: 60px; }
       @media only screen and (max-width: 600px) {
-        /* line 353, ../../sources/scss/screen.scss */
+        /* line 359, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .season-title {
           margin-top: 40px; } }
-      /* line 358, ../../sources/scss/screen.scss */
+      /* line 364, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .season-title h4 {
         color: #29282c;
         letter-spacing: 6px;
         font-size: 1.2em; }
         @media only screen and (max-width: 600px) {
-          /* line 358, ../../sources/scss/screen.scss */
+          /* line 364, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .season-title h4 {
             font-size: 1em;
             letter-spacing: 4px; } }
-      /* line 367, ../../sources/scss/screen.scss */
+      /* line 373, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .season-title p {
         margin-top: 8px;
         text-align: center;
@@ -575,10 +583,10 @@ p {
         font-weight: 200;
         color: #787878; }
         @media only screen and (max-width: 600px) {
-          /* line 367, ../../sources/scss/screen.scss */
+          /* line 373, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .season-title p {
             font-size: 1.3em; } }
-    /* line 381, ../../sources/scss/screen.scss */
+    /* line 387, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .times {
       max-width: 600px;
       margin: auto;
@@ -588,37 +596,37 @@ p {
       display: inline-block;
       width: 100%; }
       @media only screen and (max-width: 600px) {
-        /* line 381, ../../sources/scss/screen.scss */
+        /* line 387, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times {
           margin-top: 20px; } }
-      /* line 394, ../../sources/scss/screen.scss */
+      /* line 400, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .times .time-line {
         width: 100%;
         height: 100%;
         padding: 0px 20px 0px 20px; }
         @media only screen and (max-width: 600px) {
-          /* line 394, ../../sources/scss/screen.scss */
+          /* line 400, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .times .time-line {
             padding: 0px 10px 0px 10px; } }
-        /* line 401, ../../sources/scss/screen.scss */
+        /* line 407, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line .date-p {
           float: left;
           width: 50%;
           text-align: left; }
-        /* line 406, ../../sources/scss/screen.scss */
+        /* line 412, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line .time-p {
           float: left;
           width: 50%;
           text-align: right; }
-        /* line 411, ../../sources/scss/screen.scss */
+        /* line 417, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times .time-line p {
           font-size: 1.4em;
           font-weight: 200; }
           @media only screen and (max-width: 600px) {
-            /* line 411, ../../sources/scss/screen.scss */
+            /* line 417, ../../sources/scss/screen.scss */
             .content-container .opening-times-container .times .time-line p {
               font-size: 1.2em; } }
-      /* line 419, ../../sources/scss/screen.scss */
+      /* line 425, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .times .sep {
         float: left;
         content: "";
@@ -626,22 +634,22 @@ p {
         height: 1px;
         background-color: gainsboro;
         margin: 10px 0px 10px 0px; }
-    /* line 428, ../../sources/scss/screen.scss */
+    /* line 434, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .fb {
       margin: 40px 0px 80px 0px; }
-      /* line 430, ../../sources/scss/screen.scss */
+      /* line 436, ../../sources/scss/screen.scss */
       .content-container .opening-times-container .fb p {
         font-size: 1.3em;
         font-weight: 200; }
         @media only screen and (max-width: 600px) {
-          /* line 430, ../../sources/scss/screen.scss */
+          /* line 436, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .fb p {
             font-size: 1em; } }
       @media only screen and (max-width: 600px) {
-        /* line 438, ../../sources/scss/screen.scss */
+        /* line 444, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .fb a {
           font-size: 0.9em; } }
-  /* line 445, ../../sources/scss/screen.scss */
+  /* line 451, ../../sources/scss/screen.scss */
   .content-container .our-menu-container {
     width: 100%;
     height: auto;
@@ -652,14 +660,14 @@ p {
     padding-right: 5px;
     margin-bottom: 60px; }
     @media only screen and (max-width: 600px) {
-      /* line 445, ../../sources/scss/screen.scss */
+      /* line 451, ../../sources/scss/screen.scss */
       .content-container .our-menu-container {
         padding-top: 10px;
         margin-bottom: 40px; } }
-    /* line 460, ../../sources/scss/screen.scss */
+    /* line 466, ../../sources/scss/screen.scss */
     .content-container .our-menu-container p {
       font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif; }
-    /* line 463, ../../sources/scss/screen.scss */
+    /* line 469, ../../sources/scss/screen.scss */
     .content-container .our-menu-container .course-container {
       max-width: 700px;
       width: 100%;
@@ -670,10 +678,10 @@ p {
       border: 1px solid #bebebe;
       position: relative; }
       @media only screen and (max-width: 600px) {
-        /* line 463, ../../sources/scss/screen.scss */
+        /* line 469, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container {
           margin-top: 60px; } }
-      /* line 476, ../../sources/scss/screen.scss */
+      /* line 482, ../../sources/scss/screen.scss */
       .content-container .our-menu-container .course-container .course-title {
         z-index: 100;
         position: absolute;
@@ -683,87 +691,87 @@ p {
         right: 0;
         margin: 0 auto;
         width: 190px; }
-      /* line 486, ../../sources/scss/screen.scss */
+      /* line 492, ../../sources/scss/screen.scss */
       .content-container .our-menu-container .course-container h4 {
         color: #29282c;
         letter-spacing: 6px;
         font-size: 1.2em; }
-      /* line 491, ../../sources/scss/screen.scss */
+      /* line 497, ../../sources/scss/screen.scss */
       .content-container .our-menu-container .course-container .lunch-items {
         margin: auto;
         margin-top: 4em;
         margin-bottom: 3.5em; }
         @media only screen and (max-width: 600px) {
-          /* line 491, ../../sources/scss/screen.scss */
+          /* line 497, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .lunch-items {
             width: 90%; } }
-        /* line 499, ../../sources/scss/screen.scss */
+        /* line 505, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container .lunch-items .lunch-item {
           margin-top: 2em; }
-          /* line 501, ../../sources/scss/screen.scss */
+          /* line 507, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .lunch-items .lunch-item h3 {
             font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
             font-variant: small-caps;
             font-size: 1.7em;
             color: #646469; }
             @media only screen and (max-width: 600px) {
-              /* line 501, ../../sources/scss/screen.scss */
+              /* line 507, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .lunch-items .lunch-item h3 {
                 font-size: 1.5em; } }
-          /* line 510, ../../sources/scss/screen.scss */
+          /* line 516, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .lunch-items .lunch-item p {
             font-style: italic;
             font-size: 1.4em;
             color: #78787d; }
             @media only screen and (max-width: 600px) {
-              /* line 510, ../../sources/scss/screen.scss */
+              /* line 516, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .lunch-items .lunch-item p {
                 font-size: 1.2em; } }
-          /* line 518, ../../sources/scss/screen.scss */
+          /* line 524, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .lunch-items .lunch-item p.price {
             color: #248879;
             font-size: 1.6em; }
-      /* line 524, ../../sources/scss/screen.scss */
+      /* line 530, ../../sources/scss/screen.scss */
       .content-container .our-menu-container .course-container .dinner-description {
         margin-top: 2em; }
-        /* line 526, ../../sources/scss/screen.scss */
+        /* line 532, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container .dinner-description p {
           font-style: italic;
           font-size: 1.6em;
           color: #3e4241; }
-        /* line 531, ../../sources/scss/screen.scss */
+        /* line 537, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container .dinner-description p.price {
           color: #248879; }
-      /* line 535, ../../sources/scss/screen.scss */
+      /* line 541, ../../sources/scss/screen.scss */
       .content-container .our-menu-container .course-container .dinner-items {
         max-width: 400px;
         margin: auto;
         margin-top: 2em;
         margin-bottom: 3.5em; }
         @media only screen and (max-width: 600px) {
-          /* line 535, ../../sources/scss/screen.scss */
+          /* line 541, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .dinner-items {
             width: 85%; } }
-        /* line 543, ../../sources/scss/screen.scss */
+        /* line 549, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container .dinner-items .dinner-item {
           margin-top: 2em; }
-          /* line 545, ../../sources/scss/screen.scss */
+          /* line 551, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .dinner-items .dinner-item h3 {
             font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
             font-variant: small-caps;
             font-size: 1.5em;
             color: #646469; }
-          /* line 551, ../../sources/scss/screen.scss */
+          /* line 557, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .dinner-items .dinner-item p {
             font-style: italic;
             font-size: 1.3em;
             color: #78787d;
             line-height: 1.2em; }
             @media only screen and (max-width: 600px) {
-              /* line 551, ../../sources/scss/screen.scss */
+              /* line 557, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .dinner-items .dinner-item p {
                 font-size: 1.2em; } }
-        /* line 561, ../../sources/scss/screen.scss */
+        /* line 567, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container .dinner-items .dot {
           margin: auto;
           margin-top: 20px;
@@ -776,7 +784,7 @@ p {
           -o-border-radius: 3px;
           border-radius: 3px;
           background-color: #c8c8c8; }
-    /* line 572, ../../sources/scss/screen.scss */
+    /* line 578, ../../sources/scss/screen.scss */
     .content-container .our-menu-container .course-container:before {
       background: none;
       border: 1px solid #bebebe;
@@ -788,22 +796,22 @@ p {
       right: 4px;
       bottom: 4px;
       pointer-events: none; }
-  /* line 585, ../../sources/scss/screen.scss */
+  /* line 591, ../../sources/scss/screen.scss */
   .content-container .course-info {
     margin-top: 1.5em; }
     @media only screen and (max-width: 600px) {
-      /* line 585, ../../sources/scss/screen.scss */
+      /* line 591, ../../sources/scss/screen.scss */
       .content-container .course-info {
         margin-top: 1em;
         margin-bottom: 5em; } }
-    /* line 591, ../../sources/scss/screen.scss */
+    /* line 597, ../../sources/scss/screen.scss */
     .content-container .course-info p {
       font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
       font-style: italic;
       color: #6c6a73;
       font-size: 1.3em;
       line-height: 1.3em; }
-  /* line 600, ../../sources/scss/screen.scss */
+  /* line 606, ../../sources/scss/screen.scss */
   .content-container .contact-container {
     width: 100%;
     height: auto;
@@ -812,32 +820,32 @@ p {
     text-align: center;
     padding-top: 60px; }
     @media only screen and (max-width: 600px) {
-      /* line 600, ../../sources/scss/screen.scss */
+      /* line 606, ../../sources/scss/screen.scss */
       .content-container .contact-container {
         padding-top: 20px; } }
-    /* line 611, ../../sources/scss/screen.scss */
+    /* line 617, ../../sources/scss/screen.scss */
     .content-container .contact-container p {
       font-family: "adobe-garamond-pro",Garamond,Georgia,sans-serif;
       font-style: italic;
       font-size: 1.6em;
       color: #55555a; }
-    /* line 617, ../../sources/scss/screen.scss */
+    /* line 623, ../../sources/scss/screen.scss */
     .content-container .contact-container a {
       color: #248879;
       font-size: 1.7em;
       font-weight: 200;
       line-height: 1.4em; }
       @media only screen and (min-width: 1025px) {
-        /* line 623, ../../sources/scss/screen.scss */
+        /* line 629, ../../sources/scss/screen.scss */
         .content-container .contact-container a:hover {
           color: black; } }
-    /* line 629, ../../sources/scss/screen.scss */
+    /* line 635, ../../sources/scss/screen.scss */
     .content-container .contact-container .contact {
       margin-top: 3em;
       height: auto;
       position: relative;
       padding-bottom: 3em; }
-      /* line 635, ../../sources/scss/screen.scss */
+      /* line 641, ../../sources/scss/screen.scss */
       .content-container .contact-container .contact:after {
         content: "";
         position: absolute;
@@ -851,17 +859,17 @@ p {
         transform: translateX(-50%);
         bottom: 0px;
         background-color: #c8c8c8; }
-    /* line 646, ../../sources/scss/screen.scss */
+    /* line 652, ../../sources/scss/screen.scss */
     .content-container .contact-container .address {
       margin-top: 3em;
       padding-bottom: 6em;
       height: auto; }
       @media only screen and (max-width: 600px) {
-        /* line 646, ../../sources/scss/screen.scss */
+        /* line 652, ../../sources/scss/screen.scss */
         .content-container .contact-container .address {
           padding-bottom: 3em; } }
 
-/* line 657, ../../sources/scss/screen.scss */
+/* line 663, ../../sources/scss/screen.scss */
 .bordered-button {
   display: inline-block;
   border: 2px solid #7a91c3;
@@ -876,19 +884,19 @@ p {
   color: #4964a2;
   margin-top: 1em; }
   @media only screen and (max-width: 600px) {
-    /* line 657, ../../sources/scss/screen.scss */
+    /* line 663, ../../sources/scss/screen.scss */
     .bordered-button {
       padding: 1.2em 0em;
       width: 90%;
       margin-left: 5%;
       margin-right: 5%; } }
   @media only screen and (min-width: 1025px) {
-    /* line 675, ../../sources/scss/screen.scss */
+    /* line 681, ../../sources/scss/screen.scss */
     .bordered-button:hover {
       border: 2px solid #565656;
       color: black; } }
 
-/* line 682, ../../sources/scss/screen.scss */
+/* line 688, ../../sources/scss/screen.scss */
 .footer {
   position: relative;
   height: auto;
@@ -898,10 +906,10 @@ p {
   background-position: center;
   background-size: cover; }
   @media only screen and (max-width: 600px) {
-    /* line 682, ../../sources/scss/screen.scss */
+    /* line 688, ../../sources/scss/screen.scss */
     .footer {
       background-position: right 0px bottom -6px; } }
-  /* line 694, ../../sources/scss/screen.scss */
+  /* line 700, ../../sources/scss/screen.scss */
   .footer .footer-logo {
     text-align: center;
     font-family: sans-serif;
@@ -912,7 +920,7 @@ p {
     font-size: 14em;
     padding-bottom: 2em; }
     @media only screen and (max-width: 600px) {
-      /* line 694, ../../sources/scss/screen.scss */
+      /* line 700, ../../sources/scss/screen.scss */
       .footer .footer-logo {
         font-size: 9em;
         padding-bottom: 1.6em; } }
