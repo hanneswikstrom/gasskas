@@ -8,8 +8,6 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 /*global require, module, console, window*/
 'use strict';
 
-console.log('hello', require('./test')());
-
 var $ = require('./libs/jquery/dist/jquery.min.js');
 
 $(function() {
@@ -76,12 +74,4 @@ $(function() {
 	    }
 	});
 });
-},{"./libs/jquery/dist/jquery.min.js":1,"./test":3}],3:[function(require,module,exports){
-/*global require, module*/
-'use strict';
-
-module.exports = function () {
-  return 'hello module';
-};
-
-},{}]},{},[2]);
+},{"./libs/jquery/dist/jquery.min.js":1}]},{},[2]);

@@ -1,8 +1,6 @@
 /*global require, module, console, window*/
 'use strict';
 
-console.log('hello', require('./test')());
-
 var $ = require('./libs/jquery/dist/jquery.min.js');
 
 $(function() {
