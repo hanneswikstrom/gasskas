@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 .icon-gasskas-logo:before {
   content: "\e600"; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   /* line 7, ../../sources/scss/screen.scss */
   .not-small {
     display: none; } }
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 14em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     /* line 41, ../../sources/scss/screen.scss */
     .hero-logo {
       top: 20%;
@@ -268,7 +268,7 @@ p {
   letter-spacing: 4px;
   font-size: 0.8em;
   z-index: 700; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     /* line 65, ../../sources/scss/screen.scss */
     .navbar {
       font-size: 0.75em;
@@ -290,7 +290,7 @@ p {
       padding-left: 2.5em;
       padding-right: 2.5em;
       padding-top: 2px; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 87, ../../sources/scss/screen.scss */
         .navbar ul li {
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
@@ -323,7 +323,7 @@ p {
           -moz-transition: all 0.2s;
           -o-transition: all 0.2s;
           transition: all 0.2s; } }
-      @media only screen and (max-width: 320px) {
+      @media only screen and (max-width: 600px) {
         /* line 124, ../../sources/scss/screen.scss */
         .navbar ul li:first-child {
           display: none; } }
@@ -374,7 +374,7 @@ p {
       font-weight: normal;
       font-size: 1.5em;
       letter-spacing: 0.3em; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 174, ../../sources/scss/screen.scss */
         .content-container .section-title h1 {
           font-size: 1.3em;
@@ -405,7 +405,7 @@ p {
     padding-right: 120px;
     max-width: 850px;
     margin: auto; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 197, ../../sources/scss/screen.scss */
       .content-container .about {
         background-position: center 10%;
@@ -419,7 +419,7 @@ p {
       /* line 216, ../../sources/scss/screen.scss */
       .content-container .grid-section {
         width: 100%; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 216, ../../sources/scss/screen.scss */
       .content-container .grid-section {
         width: 100%; } }
@@ -432,7 +432,7 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 227, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-container-left {
           width: 100%; } }
@@ -445,7 +445,7 @@ p {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 238, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-container-right {
           display: none; } }
@@ -465,7 +465,7 @@ p {
         font-style: italic;
         font-size: 2.0em;
         font-weight: 200; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 248, ../../sources/scss/screen.scss */
         .content-container .grid-section .grid-quote {
           padding: 3em 0em 3em 0em; } }
@@ -493,7 +493,7 @@ p {
           width: 100%;
           padding-bottom: 50%;
           background-image: url("../images/grid-lemmel.jpg"); }
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 767px) {
             /* line 284, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-1 {
               padding-bottom: 55%; } }
@@ -503,7 +503,7 @@ p {
           width: 65%;
           padding-bottom: 30%;
           background-image: url("../images/grid-gasskas.jpg"); }
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 767px) {
             /* line 293, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-2 {
               width: 100%;
@@ -514,7 +514,7 @@ p {
           width: 65%;
           padding-bottom: 50%;
           background-image: url("../images/grid-concert.jpg"); }
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 767px) {
             /* line 304, ../../sources/scss/screen.scss */
             .content-container .grid-section .grid-photo-container .photo-wrapper .grid-photo-landscape-3 {
               width: 100%;
@@ -552,14 +552,14 @@ p {
     background-position: center;
     text-align: center;
     padding-top: 40px; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 343, ../../sources/scss/screen.scss */
       .content-container .opening-times-container {
         margin-top: 10px; } }
     /* line 359, ../../sources/scss/screen.scss */
     .content-container .opening-times-container .season-title {
       margin-top: 60px; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 359, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .season-title {
           margin-top: 40px; } }
@@ -568,7 +568,7 @@ p {
         color: #29282c;
         letter-spacing: 6px;
         font-size: 1.2em; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 364, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .season-title h4 {
             font-size: 1em;
@@ -582,7 +582,7 @@ p {
         font-size: 1.6em;
         font-weight: 200;
         color: #787878; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 373, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .season-title p {
             font-size: 1.3em; } }
@@ -595,7 +595,7 @@ p {
       color: #2d302f;
       display: inline-block;
       width: 100%; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 387, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .times {
           margin-top: 20px; } }
@@ -604,7 +604,7 @@ p {
         width: 100%;
         height: 100%;
         padding: 0px 20px 0px 20px; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 400, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .times .time-line {
             padding: 0px 10px 0px 10px; } }
@@ -622,7 +622,7 @@ p {
         .content-container .opening-times-container .times .time-line p {
           font-size: 1.4em;
           font-weight: 200; }
-          @media only screen and (max-width: 600px) {
+          @media only screen and (max-width: 767px) {
             /* line 417, ../../sources/scss/screen.scss */
             .content-container .opening-times-container .times .time-line p {
               font-size: 1.2em; } }
@@ -641,11 +641,11 @@ p {
       .content-container .opening-times-container .fb p {
         font-size: 1.3em;
         font-weight: 200; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 436, ../../sources/scss/screen.scss */
           .content-container .opening-times-container .fb p {
             font-size: 1em; } }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 444, ../../sources/scss/screen.scss */
         .content-container .opening-times-container .fb a {
           font-size: 0.9em; } }
@@ -659,7 +659,7 @@ p {
     padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 60px; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 451, ../../sources/scss/screen.scss */
       .content-container .our-menu-container {
         padding-top: 10px;
@@ -677,7 +677,7 @@ p {
       margin-top: 100px;
       border: 1px solid #bebebe;
       position: relative; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 469, ../../sources/scss/screen.scss */
         .content-container .our-menu-container .course-container {
           margin-top: 60px; } }
@@ -701,7 +701,7 @@ p {
         margin: auto;
         margin-top: 4em;
         margin-bottom: 3.5em; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 497, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .lunch-items {
             width: 90%; } }
@@ -714,7 +714,7 @@ p {
             font-variant: small-caps;
             font-size: 1.7em;
             color: #646469; }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 767px) {
               /* line 507, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .lunch-items .lunch-item h3 {
                 font-size: 1.5em; } }
@@ -723,7 +723,7 @@ p {
             font-style: italic;
             font-size: 1.4em;
             color: #78787d; }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 767px) {
               /* line 516, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .lunch-items .lunch-item p {
                 font-size: 1.2em; } }
@@ -748,7 +748,7 @@ p {
         margin: auto;
         margin-top: 2em;
         margin-bottom: 3.5em; }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 767px) {
           /* line 541, ../../sources/scss/screen.scss */
           .content-container .our-menu-container .course-container .dinner-items {
             width: 85%; } }
@@ -767,7 +767,7 @@ p {
             font-size: 1.3em;
             color: #78787d;
             line-height: 1.2em; }
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 767px) {
               /* line 557, ../../sources/scss/screen.scss */
               .content-container .our-menu-container .course-container .dinner-items .dinner-item p {
                 font-size: 1.2em; } }
@@ -799,7 +799,7 @@ p {
   /* line 591, ../../sources/scss/screen.scss */
   .content-container .course-info {
     margin-top: 1.5em; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 591, ../../sources/scss/screen.scss */
       .content-container .course-info {
         margin-top: 1em;
@@ -819,7 +819,7 @@ p {
     display: inline-block;
     text-align: center;
     padding-top: 60px; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 606, ../../sources/scss/screen.scss */
       .content-container .contact-container {
         padding-top: 20px; } }
@@ -864,7 +864,7 @@ p {
       margin-top: 3em;
       padding-bottom: 6em;
       height: auto; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 767px) {
         /* line 652, ../../sources/scss/screen.scss */
         .content-container .contact-container .address {
           padding-bottom: 3em; } }
@@ -883,7 +883,7 @@ p {
   transition: all 0.15s;
   color: #4964a2;
   margin-top: 1em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     /* line 663, ../../sources/scss/screen.scss */
     .bordered-button {
       padding: 1.2em 0em;
@@ -905,7 +905,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     /* line 688, ../../sources/scss/screen.scss */
     .footer {
       background-position: right 0px bottom -6px; } }
@@ -919,7 +919,7 @@ p {
     margin: auto;
     font-size: 14em;
     padding-bottom: 2em; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 767px) {
       /* line 700, ../../sources/scss/screen.scss */
       .footer .footer-logo {
         font-size: 9em;

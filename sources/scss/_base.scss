@@ -6,7 +6,7 @@
 $mq-phone-landscape: "only screen and (min-width : 321px)";
 
 /* Smartphones (portrait) ----------- */
-$mq-phone-portrait: "only screen and (max-width : 320px)";
+$mq-phone-portrait: "only screen and (max-width : 600px)";
 
 /* iPads (landscape) ----------- */
 $mq-tablet-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
@@ -18,7 +18,7 @@ $mq-tablet-portrait: "only screen and (min-device-width : 768px) and (max-device
 $mq-desktop: "only screen and (min-width : 1824px)";
 
 // Mobile first
-$mq-small: "only screen and (max-width: 600px)";
+$mq-small: "only screen and (max-width: 767px)";
 $mq-medium: "only screen and (min-width: 768px) and (max-width: 1024px)";
 $mq-big: "only screen and (min-width: 1025px)";
 
