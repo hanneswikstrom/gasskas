@@ -267,14 +267,14 @@ p {
 			}
 		}
 		.grid-info {
-			@extend %clearfix;
+			//@extend %clearfix;
 			width: 100%;
 			padding: 3.1em;
 			float: left;
 		}
 
 		.grid-photo-container {
-			@extend %clearfix;
+			//@extend %clearfix;
 			position: relative;
 			.photo-wrapper {
 				overflow:hidden;
